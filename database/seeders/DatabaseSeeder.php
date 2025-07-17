@@ -22,7 +22,10 @@ class DatabaseSeeder extends Seeder
             EmploymentStatusSeeder::class,
             DivSecUnitSeeder::class,
             EmployeeSeeder::class,
-            UserSeeder::class
+            UserSeeder::class,
+            TravelOrderStatusSeeder::class,
+            TravelOrderUserTypeSeeder::class,
+            TravelOrderSeeder::class,
         ]);
     }
 }
