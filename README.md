@@ -29,6 +29,81 @@ You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Installation
+
+### Prerequisites
+
+Before installing this Laravel application, make sure you have the following requirements:
+
+- PHP >= 8.1
+- Composer (PHP package manager)
+- Node.js and npm
+- MySQL/MariaDB or PostgreSQL
+- Git
+
+### Installation Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/brandon3sican/tois.git
+   cd tois
+   ```
+
+2. Install PHP dependencies:
+   ```bash
+   composer install
+   ```
+
+3. Install Node.js dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Copy the environment file and configure it:
+   ```bash
+   cp .env.example .env
+   ```
+   - Edit `.env` file with your database credentials and other configurations
+
+5. Generate application key:
+   ```bash
+   php artisan key:generate
+   ```
+
+6. Run database migrations:
+   ```bash
+   php artisan migrate
+   ```
+
+7. Compile assets:
+   ```bash
+   npm run build
+   ```
+
+8. Start the development server:
+   ```bash
+   php artisan serve
+   ```
+
+The application will be available at `http://localhost:8000`
+
+### Additional Commands
+
+- Run development server with hot reloading:
+  ```bash
+  npm run dev
+  ```
+
+- Run database migrations with seeders:
+  ```bash
+  php artisan migrate:fresh --seed
+  ```
+
+- Run unit tests:
+  ```bash
+  php artisan test
+  ```
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
