@@ -20,7 +20,7 @@
                     <i class="fas fa-home"></i> Dashboard
                 </a>
 
-                <a href="">
+                <a href="{{ route('employees.index') }}" class="{{ request()->routeIs('employees.index') ? 'active' : '' }}">
                     <i class="fas fa-user"></i> Employees
                 </a>
 
